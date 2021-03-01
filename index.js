@@ -11,7 +11,7 @@
  */
 function length(string) {
     // YOUR CODE BELOW HERE //
-    
+    console.log(strimg.length)
 
     // YOUR CODE ABOVE HERE //
 }
@@ -21,7 +21,7 @@ function length(string) {
  */
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
- 
+ console.log(string.toLowerCase())
 
     // YOUR CODE ABOVE HERE //
 }
@@ -31,7 +31,7 @@ function toLowerCase(string) {
  */
 function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
-
+consle.log(string,toUpperCase())
 
     // YOUR CODE ABOVE HERE //
 }
@@ -50,9 +50,9 @@ function toUpperCase(string) {
  *      See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Using_global_and_ignore_with_replace()
  */
 function toDashCase(string) {
-    // YOUR CODE BELOW HERE //
-
-       
+    // YOUR CODE BELOW HERE
+    console.log(string.replace(/ /g , '-'))
+      
     // YOUR CODE ABOVE HERE //
 }
 
@@ -70,7 +70,12 @@ function toDashCase(string) {
  */
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-       
+      if(string[0].toLowerCase===char.toLowerCase){
+        retun true 
+      }
+       else{
+         conolse.log(false)
+       }
        
     // YOUR CODE ABOVE HERE //
 }
@@ -89,7 +94,13 @@ function beginsWith(string, char) {
  */
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
-        
+         if(string[string.length-1].toLowerCase===char.toLowerCase){
+        retun true 
+      }
+       else{
+         conolse.log(false)
+       }
+       
 
     // YOUR CODE ABOVE HERE //
 }
@@ -101,7 +112,7 @@ function endsWith(string, char) {
  */
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+console.log(stringOne + stringTwo)
 
     // YOUR CODE ABOVE HERE //
 }
@@ -119,7 +130,12 @@ function concat(stringOne, stringTwo) {
 function longest(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     
-   
+  if(stringOne.length> stringTwo.length ){
+    console.log(stringOne)
+  }
+else{
+  console.log(stringTwo)
+}
     // YOUR CODE ABOVE HERE //
 }
 
